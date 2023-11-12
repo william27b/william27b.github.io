@@ -8,15 +8,26 @@
     h2 {
         color: rgb(28, 139, 190);
         font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin-bottom: 6px;
     }
 
     h4 {
         margin-bottom: 3px;
     }
 
+    h7 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
     p {
         margin-top: 0px;
         margin-bottom: 3px;
+    }
+
+    .spacer {
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 
     .button2048 {
@@ -38,6 +49,25 @@
         background-color: rgb(27, 56, 205);
         box-shadow: 3px 3px 1px rgba(50, 50, 50, 0.2);
     }
+
+    .gallery {
+        background-color: rgb(46, 170, 168);
+        color: white;
+        height: 36px;
+        width: 62px;
+        border-radius: 2px;
+        border-width: 0px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: opacity 0.2s,
+          background-color 0.2s,
+          box-shadow 0.2s;
+    }
+
+    .gallery:hover {
+        opacity: 0.9;
+        box-shadow: 3px 3px 0px rgb(57, 76, 171);
+    }
 </style>
 
 <body>
@@ -45,24 +75,23 @@
         William Speiser
     </h1>
     <h7>
-        Never back down, never give up.
+        Never Back Down...
     </h7>
     <h2>
-        About Me
+        My Education
     </h2>
     <p>
-        I love to learn! I am especially interested programming and
-        Artificial Intelligence, and I am currently reading the MIT
-        textbook on computer science and the Stanford textbook on computer
-        systems.
+        I am a freshman in highschool, attending Sacred Heart Prep, Atherton, which I have been attending
+        for nine years now.
     </p>
     <h2>
-        My Experiences
+        My Experience
     </h2>
     <p>
-        I am a freshman highschooler, currently attending Sacred Heart Prep, Atherton.
-        I am in the robotics club, and last year (as an eigth grader), my team has progressed
-        further than any other Sacred Heart Middle School team.
+        I am currently being tutored by two Stanford PhDs in Computer Science.
+    </p>
+    <p>
+        I am fluent in Python, and I am learning machine learning for fun.
     </p>
     <h2>
         My Projects
@@ -77,11 +106,20 @@
         but when the AI passes all of the debugging tests, I will run it locally, on my
         computer.
     </p>
-    <a href="2048.html"><button class = "button2048">More about 2048</button></a>
-    <h4>
-        Robotics AI
-    </h4>
-    <p>
-        I don't even know yet...
-    </p>
+    <a href="2048.html">
+        <button class = "button2048">
+            More about 2048
+        </button>
+    </a>
+    <p class = "spacer"></p>
+    <h7>
+        ... Never Give Up
+    </h7>
+
+    <h2>Images of me!</h2>
+    <a href = "gallery.html">
+        <button class = "gallery">
+            gallery
+        </button>
+    </a>
 </body>
